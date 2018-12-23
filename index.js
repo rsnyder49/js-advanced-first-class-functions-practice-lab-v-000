@@ -27,8 +27,12 @@ function driversByName(driverArr) {
   });
 }
 
-function totalRevenue() {
+function totalRevenue(driverArr) {
+  let newDrivers = Object.create(driverArr.map(function(driver){
+  return driver.revenue}));
+  const reducer = (accumulator, currentValue) => accumulator + currentValue;
   
+  return newDrivers.reduce(reducer);
 }
 
 
