@@ -13,9 +13,11 @@ function logDriversByHometown(array, town) {
   });
 }
 
-function driversByRevenue(array) {
-  let newArr = Object.create(array);
+function driversByRevenue(driverArr) {
+  let newArr = Object.create(driverArr);
   return newArr.sort(function(a, b) {
     return a.revenue - b.revenue;
   });
 }
+
+function driversByName(array)
