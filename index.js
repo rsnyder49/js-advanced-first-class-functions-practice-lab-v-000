@@ -35,4 +35,8 @@ function totalRevenue(driverArr) {
   return newDrivers.reduce(reducer);
 }
 
+function averageRevenue(driverArr) {
+  return totalRevenue(driverArr) / driverArr.length;
+}
+
 
