@@ -27,6 +27,8 @@ function driversByName(driverArr) {
   });
 }
 
-
+function totalRevenue() {
+  
+}
 
 
