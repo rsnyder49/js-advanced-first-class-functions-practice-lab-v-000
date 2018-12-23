@@ -14,5 +14,8 @@ function logDriversByHometown(array, town) {
 }
 
 function driversByRevenue(array) {
-  
+  let newDrivers = Object.create(drivers);
+  return newDrivers.sort(function(a, b) {
+    return a.revenue - b.revenue;
+  });
 }
